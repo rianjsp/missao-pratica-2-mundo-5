@@ -16,26 +16,11 @@ class StatelessWidgetExemplo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(appBarTitle)),
-      body: ListView(
+      body: Stack(
         children: [
-          ListTile(
-            title: Text('Flutter'),
-            subtitle: Text('Tudo e um widget'),
-            leading: Icon(Icons.flash_on, color: Colors.blue),
-            trailing: Icon(Icons.keyboard_arrow_right),
-          ),
-          ListTile(
-            title: Text('Dart'),
-            subtitle: Text('É Fácil'),
-            leading: Icon(Icons.mood, color: Colors.green),
-            trailing: Icon(Icons.keyboard_arrow_right),
-          ),
-          ListTile(
-            title: Text('Firebase'),
-            subtitle: Text('Combina com Flutter'),
-            leading: Icon(Icons.whatshot, color: Colors.orangeAccent),
-            trailing: Icon(Icons.keyboard_arrow_right),
-          ),
+          Container(width: 250, height: 250, color: Colors.blue),
+          Container(width: 200, height: 200, color: Colors.red),
+          Container(width: 150, height: 150, color: Colors.yellow),
         ],
       ),
     );
