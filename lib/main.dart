@@ -33,7 +33,7 @@ class StatelessWidgetExemplo extends StatelessWidget {
           ListTile(
             title: Text('Firebase'),
             subtitle: Text('Combina com Flutter'),
-            leading: Icon(Icons.whatshot, color: Colors.orange),
+            leading: Icon(Icons.whatshot, color: Colors.orangeAccent),
             trailing: Icon(Icons.keyboard_arrow_right),
           ),
         ],
