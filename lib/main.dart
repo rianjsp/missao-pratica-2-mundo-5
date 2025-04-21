@@ -10,7 +10,7 @@ class StatelessWidgetExemplo extends StatelessWidget {
   final String appBarTitle;
 
   // Construtor da classe
-  StatelessWidgetExemplo(this.appBarTitle);
+  const StatelessWidgetExemplo(this.appBarTitle, {super.key});
 
   @override
   Widget build(BuildContext context) {
